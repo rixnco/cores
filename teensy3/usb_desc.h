@@ -46,6 +46,9 @@
 #define ENDPOINT_RECEIVE_ISOCHRONOUS	0x18
 #define ENDPOINT_TRANSMIT_ISOCHRONOUS	0x14
 
+#ifdef USB_CUSTOM
+#include "usb_desc_custom.h"
+#else
 /*
 Each group of #define lines below corresponds to one of the
 settings in the Tools > USB Type menu.  This file defines what
@@ -864,6 +867,8 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define ENDPOINT13_CONFIG	(ENDPOINT_RECEIVE_ISOCHRONOUS|ENDPOINT_TRANSMIT_ISOCHRONOUS)
   #define ENDPOINT14_CONFIG	ENDPOINT_TRANSMIT_ISOCHRONOUS
   #define ENDPOINT15_CONFIG	ENDPOINT_TRANSMIT_ONLY
+
+#endif
 
 #endif
 
