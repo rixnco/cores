@@ -131,6 +131,7 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define NUM_ENDPOINTS		4
   #define NUM_USB_BUFFERS	12
   #define NUM_INTERFACE		2
+  #define CDC_IAD_DESCRIPTOR	1
   #define CDC_STATUS_INTERFACE	0
   #define CDC_DATA_INTERFACE	1
   #define CDC_ACM_ENDPOINT	2
@@ -231,7 +232,6 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define NUM_ENDPOINTS		7
   #define NUM_USB_BUFFERS	30
   #define NUM_INTERFACE		6
-  #define CDC_IAD_DESCRIPTOR	1
   #define CDC_STATUS_INTERFACE	0
   #define CDC_DATA_INTERFACE	1	// Serial
   #define CDC_ACM_ENDPOINT	2
@@ -436,15 +436,15 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define MANUFACTURER_NAME	{'T','e','e','n','s','y','d','u','i','n','o'}
   #define MANUFACTURER_NAME_LEN	11
   #define PRODUCT_NAME		{'T','e','e','n','s','y',' ','M','I','D','I'}
-  #define PRODUCT_NAME_LEN	11
-  #define EP0_SIZE		64
+  #define PRODUCT_NAME_LEN	    11
+  #define EP0_SIZE		          64
   #define NUM_ENDPOINTS         5
-  #define NUM_USB_BUFFERS	30
-  #define NUM_INTERFACE		3
-  #define CDC_IAD_DESCRIPTOR	1
+  #define NUM_USB_BUFFERS	      30
+  #define NUM_INTERFACE		      3
+  #define CDC_IAD_DESCRIPTOR	  1
   #define CDC_STATUS_INTERFACE	0
-  #define CDC_DATA_INTERFACE	1	// Serial
-  #define CDC_ACM_ENDPOINT	1
+  #define CDC_DATA_INTERFACE	  1	// Serial
+  #define CDC_ACM_ENDPOINT	    1
   #define CDC_RX_ENDPOINT       2
   #define CDC_TX_ENDPOINT       3
   #define CDC_ACM_SIZE          16
